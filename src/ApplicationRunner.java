@@ -57,7 +57,7 @@ public class ApplicationRunner {
 
         User currentUser = new User(firstName, lastName, userName, password, new Address(address, City.values()[chosenCity], zipCode));
         database.addUser(currentUser);
-        System.out.println("Kayit oldugunuz icin tesekkur ederiz... Iyi alisverisler..");
+        System.out.println("Kayit islemi basari ile tamamlanmistir... Keyifli alisverisler dileriz...");
 
         Cart shoppingCart = new Cart();
 
@@ -65,13 +65,16 @@ public class ApplicationRunner {
 
         boolean continueShopping = true;
         while(continueShopping){
+
             // Kullaniciya hangi urunu almak istedigini soralim...
             System.out.println("Lutfen urun seciminizi yaparak SEPET'e ekleyiniz...");
             System.out.println("---------------------------------------------------");
+
             // Database de bulunan urunleri alt alta listeleyelim...
             for (int i = 0; i < database.getAllItems().size(); i++) {
                 System.out.println(database.getAllItems().get(i).getName()+" icin "+(i+1)+" yazip ENTER a basiniz");
             }
+
             // Kullanicinin sectigi urunun id sini 'chosenItemId' isimli bir degiskende tutalim...
             final int chosenItemId = scan.nextInt();
             final Item chosenItem = database.findItemById(chosenItemId);
