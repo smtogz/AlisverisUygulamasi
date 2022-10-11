@@ -6,23 +6,16 @@ import exception.ItemNotFoundException;
 
 import java.util.Scanner;
 
+// TODO BU SINIFTA DEGISIKLIK YAPILMAYACAKTIR ------------------------------------------------------------------
 public class ApplicationRunner {
     public static void main(String[] args) throws ItemNotFoundException {
+
+        // TODO BU SINIFTA DEGISIKLIK YAPILMAYACAKTIR ------------------------------------------------------------------
 
         Scanner scan = new Scanner(System.in);
         Database database = new Database();
 
-        // Bu musteri ornek olarak olusturulmustur, asagida kullanicidan alinacak veriler ile musteri kaydi yapilacaktir.
-        User musteri1 = new User("Ahmet",
-                              "Basarir",
-                              "Java",
-                              "12345",
-                                new Address("Asla vazgecmez Mah, Java yi sever Sk. No:99",
-                                        City.ATLANTA,
-                                        "10001" ));
-
-        // Olusturulan user database e kayit edilecek...
-        database.addUser(musteri1);
+        // TODO BU SINIFTA DEGISIKLIK YAPILMAYACAKTIR ------------------------------------------------------------------
 
         // Bu urunler magazada satilan ve database de kayitli urunlerdir...
         Item item1 = new Item(1,"Macbook", Color.BLACK,1500);
@@ -34,7 +27,7 @@ public class ApplicationRunner {
         database.addItem(item3);
         database.addItem(item4);
 
-        //---------------------------- Yukarisi ornek data olup asil veriler kullanicidan alinacaktir -----------------
+        // TODO BU SINIFTA DEGISIKLIK YAPILMAYACAKTIR ------------------------------------------------------------------
 
         // Yeni Musteri olusturalim...Musteri bilgilerini Scanner Class ile kullanicidan alalim...
         System.out.println("Alisveris yapabilmek icin kayit olusturmaniz gereklidir...");
@@ -68,6 +61,8 @@ public class ApplicationRunner {
 
         Cart shoppingCart = new Cart();
 
+        // TODO BU SINIFTA DEGISIKLIK YAPILMAYACAKTIR ------------------------------------------------------------------
+
         boolean continueShopping = true;
         while(continueShopping){
             // Kullaniciya hangi urunu almak istedigini soralim...
@@ -89,6 +84,8 @@ public class ApplicationRunner {
             // CartItem i alisveris sepetine ekleyelim - shoppingCart.addToCart() - methoduyla ekleyelim...
             shoppingCart.addToCart(new CartItem(chosenItem,chosenItemCount));
             System.out.println("Sepetinizde "+shoppingCart.getTotalCartCost()+" Euro degerinde urun bulunmaktadir...");
+
+            // TODO BU SINIFTA DEGISIKLIK YAPILMAYACAKTIR ------------------------------------------------------------------
 
             boolean isInputValid = true;
             while (isInputValid){
@@ -114,4 +111,5 @@ public class ApplicationRunner {
             }
         }
     }
+    // TODO BU SINIFTA DEGISIKLIK YAPILMAYACAKTIR ------------------------------------------------------------------
 }

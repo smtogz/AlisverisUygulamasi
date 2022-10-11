@@ -7,6 +7,7 @@ import exception.ItemNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
+// TODO BU SINIFTA DEGISIKLIK YAPILMAYACAKTIR ------------------------------------------------------------------
 public class Database {
 
     // Bu sinifta herhangi bir odeviniz bulunmamaktadir... Bir sonraki hafta burayla ilgili calisma yapacagiz...
@@ -31,7 +32,7 @@ public class Database {
         throw new ItemNotFoundException("Boyle bir urun stoklarimizda mevcut degildir");
     }
 
-
+// TODO BU SINIFTA DEGISIKLIK YAPILMAYACAKTIR ------------------------------------------------------------------
 
     public List<Item> getAllItems(){
         return items;
