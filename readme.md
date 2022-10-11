@@ -9,6 +9,8 @@
     baslangicta KIRMIZI ile gorebileceginiz hatalar ile doludur... Bunlar HATA olmayip, sizler diger siniflardaki odevlerinizi 
     yerine getirdikten sonra kullanilabilecek kodlardir...
 
+   - Sitede satilan urunler 4 adet olup Database sinifinda kayitlidir... Bu sinif ile ilgili de herhangi bir islem yapmamalisiniz...
+
    - Bir alisveris sitesinde 
      - Musteri kullanici bilgileri ile siteye kayit olur,
      - Almak istedigi urunu secer,
