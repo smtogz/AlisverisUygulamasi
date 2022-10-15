@@ -31,28 +31,28 @@ public class ApplicationRunner {
 
         // Yeni Musteri olusturalim...Musteri bilgilerini Scanner Class ile kullanicidan alalim...
         System.out.println("Alisveris yapabilmek icin kayit olusturmaniz gereklidir...");
-        System.out.println("Lutfen adinizi girin : ");
+        System.out.print("Lutfen adinizi girin : ");
         String firstName = scan.nextLine();
 
-        System.out.println("Lutfen soyadinizi girin : ");
+        System.out.print("Lutfen soyadinizi girin : ");
         String lastName = scan.nextLine();
 
-        System.out.println("Adresinizi giriniz..:");
+        System.out.print("Adresinizi giriniz..:");
         String address = scan.nextLine();
 
-        System.out.println("Yasadiginiz sehiri seciniz..:");
+        System.out.print("Yasadiginiz sehiri seciniz..:");
         for (int i = 0; i < City.values().length; i++) {
             System.out.println(City.values()[i]+" icin "+i);
         }
         int chosenCity = scan.nextInt();
 
-        System.out.println("Zipcode..: ");
+        System.out.print("Zipcode..: ");
         String zipCode = scan.next();
 
-        System.out.println("Lutfen kullanici adinizi belirleyin : ");
+        System.out.print("Lutfen kullanici adinizi belirleyin : ");
         String userName = scan.next();
 
-        System.out.println("Lutfen sifrenizi belirleyin :");
+        System.out.print("Lutfen sifrenizi belirleyin :");
         String password = scan.next();
 
         User currentUser = new User(firstName, lastName, userName, password, new Address(address, City.values()[chosenCity], zipCode));
